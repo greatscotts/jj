@@ -1,134 +1,489 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html lang="en">
+  <head>
+ 	<link rel="icon" href="http://i.imgur.com/hKyR9Uc.jpg" />
 
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#nav').localScroll(800);
-	
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
+ 	<!--Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Allan Jay Tomol" />
+    <meta name="description" content="A Web Developer and Web Vulnerability Researcher">
+    <meta name="author" content="Allan Jay Tomol">
+	<meta property="og:url" content="http://allanjaytomol.me" />
+	<meta property="og:image" content="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/t1/1511365_549919371765392_1879694577_n.jpg" />
+	<!-- End of Meta Tags-->
 
-})
-</script>
-</head>
+    <title>Allan Jay Tomol</title>
 
-<body>
-	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="HOME" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	     <li><a href="#fourth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	</ul>
-	
-	<div id="intro">
-		<div class="story">
-			<br><br>
-			<br><br>
-			<br>
-			<br>
-	    <center>
-			<img src="images/pic1.png">
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#intro-->
-	
-	<div id="second">
-		<div class="story"><div class="bg"></div>
-	    	<div class="float-right">
-	          
-	        </div>
-	    </div> <!--.story-->
-	    
-	</div> <!--#second-->
-	
-	<div id="third">
-		<div class="story"><div class="bg2">
-	    	
-	        	 </div>
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#third-->
-	
-	<div id="fifth">
-		<div class="story">
-		    <img src="images/content4.png">
-	        </ul>
-	    </div> <!--.story-->
-	</div> <!--#fifth-->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    
+    <!-- Raleway Font -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+        
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+	<!-- ROUND -->
+	<link href="css/round.css" rel="stylesheet">
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="70">
+    <div id="navbar" class="navbar navbar-inverse">
+      <div class="fixed-container">      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home"><span class="glyphicon glyphicon-send"></span>AtOm</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about"><span class="glyphicon glyphicon-user"></span>Me</a></li>
+            <li><a href="#services"><i class="icon-gear"></i>Services</a></li>
+            <li><a href="#work"><span class="glyphicon glyphicon-briefcase"></span>Work</a></li>
+            <li><a href="#pricing"><i class="icon-dollar"></i>Pricing</a></li>
+            <li><a href="#clients"><i class="icon-comments"></i>Clients</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    
+    <!-- Features Section -->
+    <div id="home" class="section welcome">
+      <img class="background" src="img/stream_blur2.jpg" alt="stream blurred">
+      <div class="container">
+        <div class="content">
+          <!--<span class="logo glyphicon glyphicon-fire"></span>-->
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	<img src="http://i.imgur.com/UBhglKg.png" />
+          <h1>Hi! I'm Allan Jay Tomol</h1>
+          <a class="scroll-down btn" href="#about">More About Me</a>
+          <a class="scroll-down btn" href="#pricing">Buy My Service</a><br />
+			<a class="btn" href="http://allan.dezignburg.com">Visit My Blog</a><br />
+          <a class="scroll-down" href="#about"><i class="icon-angle-down"></i></a>
+        </div><!-- /.content -->
+      </div>
+    </div><!-- /.container -->
+
+    <!-- About Section -->
+    <div id="about" class="section">
+      <div class="fixed-container">
+        
+        <div class="content team">
+          <h1>Who Am I?</h1>
+
+          <div class="row">
+            
+	<center>
+            <div align="center">
+              <h2>Allan Jay Tomol</h2>
+              <h3 class="italic">Web Developer & Web Vulnerability Researcher</h3>
+              
+			<div class="portrait">
+                <img src="http://i.imgur.com/hKyR9Uc.jpg" alt="Team Portrait">
+					</div>          
+              
+              <p>I am Allan Jay Tomol. I work mainly as a Web Vulnerability Researcher, searching for a possible vulnerability in a website. I was acknowledged by Ebay, Freelancer, Zendesk, MailChimp and Many Big Sites. I'm also a Web Developer who loves making website with passion and love. I'm Currently Working as a Web Developer at DezignBurg.com </p>
+              <div class="social-media">
+                <a href="http://twitter.com/atomistheman" data-toggle="tooltip" title="twitter"><i class="icon-twitter"></i></a>
+                <a href="http://facebook.com/atomtheman" data-toggle="tooltip" title="facebook"><i class="icon-facebook"></i></a>
+                <a href="http://youtube.com/user/atomtheman" data-toggle="tooltip" title="linkedin"><i class="icon-youtube-sign"></i></a>
+                <a href="http://dezignburg.com/" data-toggle="tooltip" title="Website"><i class="icon-desktop"></i></a>
+                <a href="mailto:allan.jay71@yahoo.com" data-toggle="tooltip" title="Email"><i class="icon-mail-reply"></i></a>
+              </div>
+            </div>
+          </div>
+</center>          
+        </div>
+      </div>
+    </div>
+
+<!-- /.container -->
+
+    <!-- Services Section -->
+    <!--  Image background parallax -->
+    <div id="services" class="section image">
+      <div class="background parallax"></div>
+      <div class="fixed-container">
+        
+        <div class="content services">
+          <h1>Services</h1>
+          <div class="row">
+            <div class="empty col-md-2 col-sm-3 col-xs-12"></div>
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <h3>I offer services that range from Website Developing to Web Vulnerability Researching. Just check out all of my services below to get a general idea of what i am capable of. </h3>
+            </div>
+            <div class="empty col-md-2 col-sm-3 col-xs-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="service-icon">
+                <i class="icon-sitemap" data-toggle="tooltip" title="I Always have a plan when making websites."></i>
+                <span>PLANNING</span>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="service-icon">
+                <i class="icon-search" data-toggle="tooltip" title="Clean, Modern and Responsive Web Design."></i>
+                <span>DESIGN</span>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="service-icon">
+                <i class="icon-sun" data-toggle="tooltip" title="Well-Organized Code to understand how it works."></i>
+                <span>ORGANIZING</span>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="service-icon">
+                <i class="icon-umbrella" data-toggle="tooltip" title="Web Vulnerability Researching. I can help protect your website from attacks."></i>
+                <span>SECURITY</span>                
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-	<div id="six">
-		<div class="story"><br><br><center><img src="images/content5.png"></center>
-		
-		   <div class="wrapper">
-				<ul class="stage clearfix">
+    <!-- Portfolio Section -->
+    <!--  On smaller devices, portfolio becomes auto height and no fixed -->
+    
+    <div id="work" class="section white">
+      <div class="fixed-container">
+        <div class="content">
+        
+          <h1>My Work And Portfolio</h1>
+    			<!-- FILTER CONTROLS -->
 
-					<li class="scene">
-						<div class="movie" onclick="return true">
-							<div class="poster"></div>
-							<div class="info">
-								<header>
-									<h1>Khawna</h1>
-									
-								</header>
-								<p>I developed the product for www.khawna.com focusing more on design and production of the classes.
-								</p>
-							</div>
-						</div>
-					</li>
+    			<div class="controls">	
+  				  <a class="btn filter" data-filter="all">SHOW ALL</a>
+  				  <a class="btn filter" data-filter="category_1">Web Developing</a>
+  				  <a class="btn filter" data-filter="category_2">Logo Design</a>
+  				  <a class="btn filter" data-filter="category_3">CSS Trick</a>
+  				  <a class="btn filter" data-filter="category_2 category_3">CSS Trick and Logo Design</a>
+    			</div>
 
-					<li class="scene">
-						<div class="movie" onclick="return true">
-							<div class="poster"></div>
-							<div class="info">
-								<header>
-									<h1>OrangeApps</h1>
-									
-								</header>
-								<p>
-									I developed the user experience for the the OrangeApps Inc. website and focusing more on design.
-								</p>
-							</div>
-						</div>
-					</li>
+    		</div>
+      </div>
+      <div class="gallery row">
+        <ul>
+          <li class="col-md-4 col-sm-4 col-xs-12 mix category_1" data-cat="1">
+            <a href="http://stigigaminds.com" class="mix-cover">
+              <img src="http://i.imgur.com/3igcLti.jpg" alt="GigaMinds">
+              <span class="cover"><span>GigaMinds Website</span></span>
+            </a>
+          </li>
+  				<li class="col-md-4 col-sm-4 col-xs-12 mix category_1" data-cat="1">
+  				  <a href="http://i.imgur.com/k0dwRzT.png" class="mix-cover">
+              <img src="img/sintel-snowscape.jpg" alt="sintel snowscape">
+              <span class="cover"><span>Snowscape</span></span>
+            </a>
+          </li>
+  				<li class="col-md-4 col-sm-4 col-xs-12 mix category_2" data-cat="3">
+  				  <a href="http://i.imgur.com/qt2bIib.jpg" class="mix-cover">
+              <img src="http://i.imgur.com/qt2bIib.jpg" alt="Crystal Coolers">
+              <span class="cover"><span>Crystal Coolers Logo Design</span></span>
+            </a>  
+          </li>
+  				<li class="col-md-4 col-sm-4 col-xs-12 mix category_2" data-cat="2">
+  				  <a href="#" class="mix-cover">
+              <img src="http://i.imgur.com/k0dwRzT.png" alt="Red Fog Soccer Team">
+              <span class="cover"><span>RF Soccer Team Logo Design</span></span>
+            </a>
+          </li>
+  				<li class="col-md-4 col-sm-4 col-xs-12 mix category_3" data-cat="3">
+  				  <a href="http://cssdeck.com/labs/full/qksnrap2" class="mix-cover">
+              <img src="http://i.imgur.com/k3PfJfM.png" alt="Wow Slider">
+              <span class="cover"><span>Wow Slider</span></span>
+            </a>
+          </li>
+  				<li class="col-md-4 col-sm-4 col-xs-12 mix category_3" data-cat="3">
+  				  <a href="http://blog.dezignburg.com/livepreview/hover.html" class="mix-cover">
+              <img src="http://blog.dezignburg.com/wp-content/uploads/2014/02/hover-300x203.png" alt="SVG Hover Effect">
+              <span class="cover"><span>SVG Hover Effect</span></span>
+            </a>
+  				</li>          
+        </ul>
+      </div>
+			<!-- GALLERY -->
 
-					<li class="scene">
-						<div class="movie" onclick="return true">
-							<div class="poster"></div>
-							<div class="info">
-								<header>
-									<h1>Tekmonkeys</h1>
-								
-								</header>
-								<p>
-									I decided to focus on the flat design on this website and learning how to focus on information rather than design.
-								</p>
-							</div>
-						</div>
-					</li></div></div>
-<div id="fourth">
-		<div class="story"><center><br><br>
-		       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="images/content6.png">
-	        </ul>
-	    </div> <!--.story-->
-	</div> <!--#fifth-->
-</body>
+    </div><!-- /.container -->
+    
+    
+    <!-- Pricing Section -->
+    <div id="pricing" class="section white">
+      <div class="fixed-container">
+        
+        <div class="content">
+          <h1>Pricing Table</h1>
+          
+          <div class="pricing">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="wrapper">
+                  <h3 class="text-center"><span class="glyphicon glyphicon-wrench"></span>One Website Vulnerability Researching</h3>
+                  <table class="table">
+                    <thead>
+                      <tr><th><span class="price"><i class="icon-dollar"></i>25</span></th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>100% Guarantee</td></tr>
+                      <tr><td>No Data Breach </td></tr>
+                      <tr><td>Free Email Support</td></tr>  
+                      <tr><td><center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="allanjaytomol50@yahoo.com">
+<input type="hidden" name="lc" value="PH">
+<input type="hidden" name="item_name" value="1 Website Vulnerability Researching">
+<input type="hidden" name="item_number" value="1">
+<input type="hidden" name="amount" value="25.00">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="button_subtype" value="services">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
+<table>
+<tr><td><input type="hidden" name="on0" value="Your Email for me to contact u">Enter your Email below for me to contact you.</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+</table>
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
+</td></tr>  
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="wrapper">
+                  <h3 class="text-center"><span class="glyphicon glyphicon-thumbs-up"></span>One - Page Website Developing. Like my Website.</h3>
+                  <table class="table">
+                    <thead>
+                      <tr><th><span class="price"><i class="icon-dollar"></i>50</span></th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>One Page Site Like my site</td></tr>
+                      <tr><td>On Time</td></tr>
+                      <tr><td>Free Email Support</td></tr>  
+                      <tr><td><center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Enter your Email">Enter your Email below for me to contact you.</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center></td></tr>  
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="wrapper">                
+                  <h3 class="text-center"><span class="glyphicon glyphicon-plus-sign"></span>More than 1 Web Vulnerability Researching or More Page Web Developing</h3>
+                  <table class="table">
+                    <thead>
+                      <tr><th><span class="price"><i class="icon-dollar"></i>100</span></th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>No Data Breach</td></tr>
+                      <tr><td>Making your site Secured</td></tr>  
+                      <tr><td>Free Email Support And Quality Website Developing</td></tr>  
+                      <tr><td><center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Enter your Email">Enter your Email below for me to contact you.</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center></td></tr>  
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    
+    
+    <!-- Clients, Testimonials and Acknowledgement Section -->
+    <!--  Image background parallax -->
+    <div id="clients" class="section image">
+      <div class="background parallax"></div>
+      <div class="fixed-container">
+        
+        <div class="content services">
+          <h1>Clients, Testimonials & Acknowledgement</h1>
+          <div class="row">
+          	<!-- Alive Shoes -->
+            <div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="http://aliveshoes.com" data-target="#wdc" data-toggle="tab"><img src="https://www.aliveshoes.com/assets/general/logo-aliveshoes-white.png" width="180" alt="Alive Shoes"></a></div>
+
+            <!--Creative Market-->
+            <div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="https://creativemarket.com/webdesigncrowd/" data-target="#creativemarket" data-toggle="tab"><img src="img/CreativeMarket-Logo.png" alt="Creative Market"></a></div>
+
+            <!--The Next Web-->
+            <div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="http://thenextweb.com" data-target="#tnw" data-toggle="tab"><img src="http://cdn.confreaks.com/system/events/logos/93/The_Next_Web_logo-original.png" width="224" height="121" alt="The Next Web"></a></div>
+
+            <!--Zip Match-->
+            <div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="http://zipmatch.com" data-target="#zipmatch" data-toggle="tab"><img src="http://i.imgur.com/eK9xRpI.png" width="224" height="121" alt="ZipMatch"></a></div>
+
+            <!--Scoutzie-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="http://scoutzie.com" data-target="#scoutzie" data-toggle="tab"><img src="https://scoutziehq.s3.amazonaws.com/assets/static/scoutziecom-logo-orange.png" alt="Scoutzie"></a></div>
+
+			<!--Invision-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="https://hackerone.com/invision/thanks" data-target="#invision" data-toggle="tab"><img src="http://blog.formstack.com/wp-content/uploads/2012/12/invision_logo.png" alt="Invision"></a></div>
+
+			<!--HackerOne-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="https://hackerone.com/okcupid/thanks" data-target="#okcupid" data-toggle="tab"><img src="http://akcdn.okccdn.com/media/img/template/2012/pq_logo_v3.png" alt="OkCupid"></a></div>
+
+			<!--Ebay-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="http://pages.ebay.com/securitycenter/ResearchersAcknowledgement.html" data-target="#ebay" data-toggle="tab"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/EBay_logo.png/800px-EBay_logo.png" width="224" height="121" alt="Ebay"></a></div>
+
+			<!--Freelancer-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="http://www.freelancer.com/info/security-hall-of-fame.php" data-target="#freelancer" data-toggle="tab"><img src="http://oceanwebtech.com/wp-content/uploads/2014/02/freelancer-logo.png" width="224" height="121" alt="Freelancer"></a></div>
+
+			<!--MailChimp-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="hhttp://mailchimp.com/about/security-response/" data-target="#mailchimp" data-toggle="tab"><img src="http://www.jeffmould.com/wp-content/uploads/2013/11/mailchimp-logo.png" width="224" height="121" alt="MailChimp"></a></div>
+
+			<!--Zendesk-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="http://www.zendesk.com/company/responsible-disclosure-policy" data-target="#zendesk" data-toggle="tab"><img src="http://img1.wikia.nocookie.net/__cb20131114043602/logopedia/images/4/43/Zendesk-logo.png" width="224" height="121" alt="Zendesk"></a></div>
+
+			<!--Zencash-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="https://www.zencash.com/security/" data-target="#zencash" data-toggle="tab"><img src="http://mindingmybooks.com/blog/wp-content/uploads/2013/09/20130503063809_ZenCash_Logo_Light.png" width="224" height="121" alt="Zencash"></a></div>
+
+			<!--Meldium-->
+			<div class="logo col-md-3 col-sm-3 col-xs-12"><a class="tab" href="https://www.meldium.com/security#security-hall-of-fame" data-target="#meldium" data-toggle="tab"><img src="http://www.freepasswordmanager.com/wp-content/uploads/2013/07/meldium-logo-1200-1024x426-644x320.png" width="224" height="121" alt="Meldium"></a></div>
+
+
+          </div>
+          
+          <!--Messages-->
+          <div class="row">
+            <div class="empty col-md-1 col-sm-1 col-xs-12"></div>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+              <div class="tab-content">
+
+              	<!--AliveShoes-->
+                <div class="tab-pane fade" id="wdc">Alive Shoes</div>
+
+                <!--CreativeMarket-->
+                <div class="tab-pane active fade in" id="creativemarket">Creative Market</div>
+
+                <!--The Next Web-->
+                <div class="tab-pane fade" id="tnw">The Next Web</div>
+
+                <!--ZipMatch-->
+                <div class="tab-pane fade" id="zipmatch">Zip Match</div>
+
+                <!--Scoutzie-->
+				<div class="tab-pane fade" id="scoutzie">Hi Allan, thank you for pointing out the exploit in our application. Best of luck in your future work and don't stop learning. You're on a good path!</div>
+
+				<!--Invision-->
+				<div class="tab-pane fade" id="invision">I just got listed as the one of the top 10 hackers.</div>
+
+				<!--OkCupid-->
+				<div class="tab-pane fade" id="okcupid">I just got Acknowledged by OkCupid</div>
+
+				<!--Ebay-->
+				<div class="tab-pane fade" id="ebay">I just got Acknowledged by Ebay</div>
+
+				<!--Freelancer-->
+				<div class="tab-pane fade" id="freelancer">I just got Acknowledged by Freelancer and rewarded a Swag</div>
+
+				<!--MailChimp-->
+				<div class="tab-pane fade" id="mailchimp">I just got Acknowledged by Mailchimp</div>
+
+				<!--Zendesk-->
+				<div class="tab-pane fade" id="zendesk">I just got Acknowledged by Zendesk</div>
+
+				<!--ZenCash-->
+				<div class="tab-pane fade" id="zencash">I just got Acknowledged by Zencash and rewarded a bounty of $100</div>
+
+				<!--Meldium-->
+				<div class="tab-pane fade" id="meldium">I just got Acknowledged by Meldium</div>
+
+              </div>
+
+            </div>
+            <div class="empty col-md-1 col-sm-1 col-xs-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    
+    <div class="footer">
+      <div class="fixed-container">
+        
+        <div class="row">
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <h3>links</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/messages/AtOmTheMan">Contact</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="http://allan.dezignburg.com/">Blog</a></li>
+	      <li><a href="http://dezignburg.com/">Dezign Burg</a></li>
+	      <li><a href="http://blog.dezignburg.com/">Blog-DezignBurg</a></li>              
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="col-md-5 col-sm-5 col-xs-12">
+            <h3>About Me</h3>
+            <p>
+              I'm an independent Web Vulnerability Researcher and Web Developer that is focused on making your vision come to life. 
+            </p>
+            <div class="social-media">
+              <a href="http://twitter.com/atomistheman" data-toggle="tooltip" title="twitter"><i class="icon-twitter"></i></a>
+                <a href="http://facebook.com/atomtheman" data-toggle="tooltip" title="facebook"><i class="icon-facebook"></i></a>
+              <a href="http://youtube.com/user/atomtheman" data-toggle="tooltip" title="linkedin"><i class="icon-youtube-sign"></i></a>
+                <a href="http://dezignburg.com/" data-toggle="tooltip" title="Website"><i class="icon-desktop"></i></a>
+                <a href="mailto:allan.jay71@yahoo.com" data-toggle="tooltip" title="Email"><i class="icon-mail-reply"></i></a>
+            </div>
+            
+          </div>
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+        </div>
+        <div class="row">
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+          <div class="empty col-md-8 col-sm-8 col-xs-12"><hr /></div>
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+        </div>
+      </div>
+      
+      <p class="copyright">
+        &copy; Made by <a href="http://facebook.com/atomtheman">Allan Jay Tomol</a>
+      </p>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+  </body>
 </html>
